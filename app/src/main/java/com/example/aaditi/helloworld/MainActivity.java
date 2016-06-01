@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-        String d1Str = gson.toJson( d1 );
+        String d1Str = gson.toJson( d1 ) + gson.toJson( d2 ) ;
+
+
 
 
         obj.setText(d1Str);
